@@ -1,19 +1,17 @@
 <template>
   <div>
-    <div v-for="job in jobs" :key="job.id">
+    <div v-for="job in fetchedJobs" :key="job.id">
       {{ job.title }}
     </div>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
   computed: {
-    ...mapState({
-      jobs: (state) => state.jobs,
-    }),
+    ...mapGetters(['fetchedJobs']),
   },
   created() {
     this.$store.dispatch('FETCH_JOBS');
