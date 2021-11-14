@@ -1,8 +1,8 @@
 <template>
   <header id="header">
-    <RouterLink to="/news">News</RouterLink> |
-    <RouterLink to="/ask">Ask</RouterLink> |
-    <RouterLink to="/jobs">Jobs</RouterLink> |
+    <RouterLink to="/news">News</RouterLink>|
+    <RouterLink to="/ask">Ask</RouterLink>|
+    <RouterLink to="/jobs">Jobs</RouterLink>|
   </header>
 </template>
 

@@ -8,4 +8,7 @@ export default {
   fetchedJobs(state) {
     return state.jobs;
   },
+  fetchedItem(state) {
+    return state.item;
+  },
 };
