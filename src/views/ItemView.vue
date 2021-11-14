@@ -1,17 +1,14 @@
 <template>
   <div>
     <section class="user">
-      <div class="user__container">
-        <div>
-          <FontAwesomeIcon icon="user" class="user__icon" />
-        </div>
-        <div class="user__description">
-          <RouterLink :to="`/user/${fetchedItem.user}`">
-            {{ fetchedItem.user }}
-          </RouterLink>
-          <div class="user__time">{{ fetchedItem.time_ago }}</div>
-        </div>
-      </div>
+      <UserProfile :info="fetchedItem">
+        <RouterLink slot="userName" :to="`/user/${fetchedItem.user}`">
+          {{ fetchedItem.user }}
+        </RouterLink>
+        <template slot="time">{{ 'Posted ' + fetchedItem.time_ago }}</template>
+      </UserProfile>
+    </section>
+    <section>
       <h2>{{ fetchedItem.title }}</h2>
     </section>
     <section>
@@ -21,9 +18,13 @@
 </template>
 
 <script>
+import UserProfile from '../components/UserProfile.vue';
 import { mapGetters } from 'vuex';
 
 export default {
+  components: {
+    UserProfile,
+  },
   computed: {
     ...mapGetters(['fetchedItem']),
   },

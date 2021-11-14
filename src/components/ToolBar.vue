@@ -2,7 +2,7 @@
   <header id="header">
     <RouterLink to="/news" class="header__link">News</RouterLink>|
     <RouterLink to="/ask" class="header__link">Ask</RouterLink>|
-    <RouterLink to="/jobs" class="header__link">Jobs</RouterLink>|
+    <RouterLink to="/jobs" class="header__link">Jobs</RouterLink>
   </header>
 </template>
 
