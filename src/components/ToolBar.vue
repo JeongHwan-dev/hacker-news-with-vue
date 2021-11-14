@@ -1,8 +1,8 @@
 <template>
   <header id="header">
-    <RouterLink to="/news">News</RouterLink>|
-    <RouterLink to="/ask">Ask</RouterLink>|
-    <RouterLink to="/jobs">Jobs</RouterLink>|
+    <RouterLink to="/news" class="header__link">News</RouterLink>|
+    <RouterLink to="/ask" class="header__link">Ask</RouterLink>|
+    <RouterLink to="/jobs" class="header__link">Jobs</RouterLink>|
   </header>
 </template>
 
@@ -17,9 +17,8 @@ export default {};
   background-color: #42b883;
   color: #fff;
 
-  a {
+  .header__link {
     color: #fff;
-    text-decoration: none;
 
     &.router-link-exact-active {
       color: #35495e;

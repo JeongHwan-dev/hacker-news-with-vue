@@ -18,10 +18,24 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 body {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #344952;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #42b883;
+    text-decoration: underline;
+  }
+  &.router-link-exact-active {
+    text-decoration: underline;
+  }
 }
 
 .page-enter-active,
