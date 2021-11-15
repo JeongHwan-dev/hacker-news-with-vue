@@ -1,25 +1,9 @@
-import {
-  fetchNewsList,
-  fetchAskList,
-  fetchJobsList,
-  fetchUserData,
-  fetchCommentItem,
-} from '../api/index.js';
+import { fetchList, fetchUserData, fetchCommentItem } from '../api/index.js';
 
 export default {
-  FETCH_NEWS({ commit }) {
-    fetchNewsList()
-      .then(({ data }) => commit('SET_NEWS', data))
-      .catch((error) => console.log(error));
-  },
-  FETCH_ASK({ commit }) {
-    fetchAskList()
-      .then(({ data }) => commit('SET_ASK', data))
-      .catch((error) => console.log(error));
-  },
-  FETCH_JOBS({ commit }) {
-    fetchJobsList()
-      .then(({ data }) => commit('SET_JOBS', data))
+  FETCH_LIST({ commit }, pageName) {
+    fetchList(pageName)
+      .then(({ data }) => commit('SET_LIST', data))
       .catch((error) => console.log(error));
   },
   FETCH_USER({ commit }, userId) {
