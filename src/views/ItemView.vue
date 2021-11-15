@@ -28,11 +28,6 @@ export default {
   computed: {
     ...mapGetters(['fetchedItem']),
   },
-  created() {
-    const itemId = this.$route.params.itemId;
-
-    this.$store.dispatch('FETCH_ITEM', itemId);
-  },
 };
 </script>
 

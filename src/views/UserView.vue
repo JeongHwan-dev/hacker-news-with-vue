@@ -20,9 +20,5 @@ export default {
       return this.$store.state.user;
     },
   },
-  created() {
-    const userId = this.$route.params.userId;
-    this.$store.dispatch('FETCH_USER', userId);
-  },
 };
 </script>
