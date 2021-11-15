@@ -25,16 +25,24 @@ export default {
 .user__container {
   display: flex;
   align-items: center;
-  padding: 0.5rem;
+  padding: 18px 24px;
+  background-color: #f3f3f3;
 
   .user__icon {
+    margin-right: 12px;
+    color: #3b3b3b;
     font-size: 2.5rem;
   }
   .user__description {
     padding-left: 8px;
-  }
-  .user__time {
-    font-size: 0.7rem;
+    font-weight: 600;
+    color: #2b2b2b;
+
+    .user__time {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: #828282;
+    }
   }
 }
 </style>
