@@ -65,7 +65,7 @@ a {
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
 .page-enter,
 .page-leave-to {
