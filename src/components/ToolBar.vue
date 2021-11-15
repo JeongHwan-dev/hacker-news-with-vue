@@ -1,6 +1,6 @@
 <template>
   <header id="header">
-    <div class="header__logo">Y</div>
+    <RouterLink to="/news" class="header__logo">Y</RouterLink>
     <nav class="header__nav">
       <RouterLink to="/news" class="header__link">News</RouterLink>
       <RouterLink to="/ask" class="header__link">Ask</RouterLink>
@@ -30,7 +30,16 @@ $logo-length: 40px;
     box-sizing: border-box;
     font-size: 26px;
     font-weight: 700;
+    color: #fff;
     text-align: center;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    &.router-link-exact-active {
+      text-decoration: none;
+    }
   }
 
   .header__nav {
