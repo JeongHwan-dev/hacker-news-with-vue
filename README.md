@@ -1,11 +1,10 @@
 <div align="center">
   <br />
-  <img src="./readme_assets/hacker-news_logo.png" alt="hacker-news" height="100px" />
   <br />
   <h1>해커 뉴스(Hacker News with Vue)</h1>
-  <!-- <a href="https://app.netlify.com/sites/happy-bassi-c5d6dd/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/c4b43bd3-a317-41c2-8214-cf41dad6b27d/deploy-status" alt="Netlify Status" />
-  </a> -->
+  <a href="https://app.netlify.com/sites/objective-ptolemy-5bfe5d/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/9569c188-5c77-4baa-bc4e-fbda92e35385/deploy-status" alt="Netlify Status" />
+  </a>
   <br />
 </div>
 
@@ -23,8 +22,6 @@
 ## 💁 웹 서비스 소개
 
 [**Hacker News**](https://news.ycombinator.com/)에서 제공하는 [**Open API**](https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md)를 활용해 만든 **IT 뉴스 제공 웹 서비스**입니다.
-
-> 반응형 웹이 적용되어 있습니다.
 
 <br />
 
