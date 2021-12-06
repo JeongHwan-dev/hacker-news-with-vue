@@ -25,7 +25,7 @@
 
 <br />
 
-[**🔗 배포된 웹 서비스로 바로가기 Click !**](https://objective-ptolemy-5bfe5d.netlify.app/news) 👈
+[**🔗 배포된 웹 서비스로 바로가기 Click !**](https://objective-ptolemy-5bfe5d.netlify.app/) 👈
 
 > 새 창 열기 방법 : CTRL+click (on Windows and Linux) | CMD+click (on MacOS)
 
